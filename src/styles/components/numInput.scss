@@ -1,0 +1,18 @@
+@use '../_fonts.scss' as fonts;
+
+@use '../_variables.scss' as vars;
+@use '../_mixins.scss' as mixins;
+
+.fontAwesome {
+  display: flex;
+
+  color: vars.$main-color;
+  font-family: fonts.$font-amesome;
+}
+.duration {
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

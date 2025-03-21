@@ -1,0 +1,31 @@
+@use './_fonts.scss' as fonts;
+
+@use './_variables.scss' as vars;
+
+@mixin header_1 {
+  font-family: fonts.$font-family;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  //text-transform: uppercase;
+  text-align: center;
+  //color: $static-white;
+  //text-align: center;
+}
+
+@mixin btn {
+  margin: 5px 0;
+  font-family: fonts.$font-family;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  padding: 8px;
+  background: vars.$neutral-dark;
+  color: vars.$main-color;
+  border: 1px solid vars.$neutral-medium;
+  border-radius: 5px;
+  box-shadow: 0 0 100px vars.$color-dark;
+}

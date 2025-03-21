@@ -1,0 +1,36 @@
+@use './_variables.scss' as vars;
+@media (hover: hover) {
+  .btn_clickable {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      border-color: vars.$main-color;
+      //box-shadow: 0 0 5px vars.$neutral-medium;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  #app {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}

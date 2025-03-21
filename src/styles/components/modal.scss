@@ -1,0 +1,27 @@
+@use '../_fonts.scss' as fonts;
+
+@use '../_variables.scss' as vars;
+@use '../_mixins.scss' as mixins;
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: vars.$main-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 4px 6px vars.$main-bg;
+  z-index: 1000;
+  max-width: 90%;
+  @include mixins.btn;
+  padding: 40px;
+  font-size: 16px;
+  text-align: center;
+}

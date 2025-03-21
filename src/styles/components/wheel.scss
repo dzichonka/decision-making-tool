@@ -1,0 +1,15 @@
+@use '../_fonts.scss' as fonts;
+
+@use '../_variables.scss' as vars;
+@use '../_mixins.scss' as mixins;
+
+.wheel {
+  max-height: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  &-canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

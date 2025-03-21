@@ -1,0 +1,54 @@
+@use '../_fonts.scss' as fonts;
+
+@use '../_variables.scss' as vars;
+@use '../_mixins.scss' as mixins;
+
+.decision-picker {
+  .main {
+    display: flex;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fontAwesome {
+    color: vars.$main-color;
+  }
+  canvas {
+    box-shadow: 0 0 150px vars.$color-dark;
+    border-radius: 50%;
+  }
+  .btn {
+    margin: 0 auto;
+    min-width: 42px;
+    max-width: 100px;
+    &-sound {
+      margin: 0;
+    }
+  }
+
+  .input {
+    @include mixins.btn;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    &:focus {
+      outline: none;
+      border-color: vars.$main-color;
+      box-shadow: 0 0 5px vars.$neutral-medium;
+    }
+  }
+  .input {
+    max-width: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .input::-webkit-inner-spin-button,
+  .input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
