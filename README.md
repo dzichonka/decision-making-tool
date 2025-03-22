@@ -1,5 +1,5 @@
-# [RS-School: JavaScript / Frontend Course](hhttps://rs.school/courses/javascript)
+[Decision Making Tool](https://rolling-scopes-school.github.io/dzichonka-JSFE2024Q4/decision-making-tool/) deployment of project
 
-# [TASK: "Decision Making Tool"](https://github.com/rolling-scopes-school/tasks/blob/master/stage2/tasks/decision-making-tool/README.md)
+[RS-School: JavaScript / Frontend Course](hhttps://rs.school/courses/javascript) info
 
-# [Deployment of project](https://rolling-scopes-school.github.io/dzichonka-JSFE2024Q4/christmas-shop/)
+[Task](https://github.com/rolling-scopes-school/tasks/blob/master/stage2/tasks/decision-making-tool/README.md) description
