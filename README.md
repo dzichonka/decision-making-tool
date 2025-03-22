@@ -1,4 +1,4 @@
-[Decision Making Tool](https://rolling-scopes-school.github.io/dzichonka-JSFE2024Q4/decision-making-tool/) deployment of project
+[Decision Making Tool](https://dzichonka.github.io/decision-making-tool/) deployment of project
 
 [RS-School](https://rs.school/) about the school
 
