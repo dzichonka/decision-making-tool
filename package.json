@@ -9,7 +9,7 @@
     "preview": "node_modules/.bin/vite preview",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix .",
-    "deploy": "tsc --noEmit && npm run build && gh-pages -d dist -e decision-making-tool",
+    "deploy": "tsc --noEmit && npm run build && gh-pages -d dist",
     "format": "prettier --write \"**/*\" --ignore-unknown",
     "format:check": "prettier --check \"**/*\" --ignore-unknown",
     "stylelint": "stylelint '**/*.{css,scss}'",
