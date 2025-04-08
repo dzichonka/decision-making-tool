@@ -737,23 +737,20 @@ function decisionPicker(parent) {
     onClick: () => eventEmitter.emit("changePage", "/")
   });
 }
-const BASE_PATH = window.location.hostname.includes("github.io") ? "/dzichonka-JSFE2024Q4/decision-making-tool" : "";
 function createRouter(container) {
   function renderPage(path) {
     container.innerHTML = "";
-    const cleanPath = path.startsWith(BASE_PATH) ? path.replace(BASE_PATH, "") : path;
-    if (cleanPath === "/" || cleanPath === "" || cleanPath === "/home") {
+    if (path === "/" || path === "" || path === "/home") {
       homePage(container);
-    } else if (cleanPath === "/decision-picker") {
+    } else if (path === "/decision-picker") {
       decisionPicker(container);
     } else {
       throw new Error(`Router doesn't work: received path "${path}"`);
     }
   }
   function navigateTo(path) {
-    const fullPath = path.startsWith(BASE_PATH) ? path : `${BASE_PATH}${path}`;
-    window.location.hash = fullPath.replace(BASE_PATH, "");
-    renderPage(fullPath);
+    window.location.hash = path;
+    renderPage(path);
   }
   eventEmitter.on("changePage", navigateTo);
   window.addEventListener("hashchange", () => renderPage(window.location.hash.slice(1)));
@@ -774,4 +771,4 @@ const root = createElement({
 });
 document.body.prepend(root);
 App(root);
-//# sourceMappingURL=index-8J5nxHwK.js.map
+//# sourceMappingURL=index-BZXgB3mu.js.map
